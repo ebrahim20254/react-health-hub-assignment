@@ -1,11 +1,17 @@
-import Header from "../Header/Header";
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
+    const handleLogin = e =>{
+        e.preventDefault()
+        console.log(e.currentTarget);
+        const form = new FormData(e.currentTarget)
+        console.log(form.get('password'));
+    }
     return (
         <div className="hero-content flex-col lg:flex-row-reverse my-20">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body ">
+          <form onSubmit={handleLogin} className="card-body ">
             <h2 className=" text-center text-3xl font-semibold">Please Login</h2>
             <div className="form-control">
               <label className="label">
@@ -26,6 +32,7 @@ const Login = () => {
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
+          <p className=" text-center mb-4">Do not have an account <Link className=" text-blue-600 font-bold" to="/register">Register</Link></p>
         </div>
       </div>
     );
