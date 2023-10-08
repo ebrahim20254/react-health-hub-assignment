@@ -1,0 +1,48 @@
+[
+    {
+        "id": "1",
+        "image": "https://i.ibb.co/c8vpkR7/surgary.jpg",
+        "service_name": "Surgery",
+        "service_description": "Surgeons meticulously operate, skillfully repairing delicate tissues, while anesthesiologists ensure patients remain pain-free and stable throughout the procedure.",
+        "price": 799.99
+    },
+
+    {
+        "id": "2",
+        "image": "https://i.ibb.co/0m5s2fY/pathology.jpg",
+        "service_name": "Department of Pathology",
+        "service_description": "Pathology is the medical field that studies diseases, their causes, processes, and effects on tissues, organs, and the body. It's crucial for diagnosis and treatment.",
+        "price": 87.86
+    },
+
+    {
+        "id": "3",
+        "image": "https://i.ibb.co/qyMqcQ3/Hematology.jpg",
+        "service_name": "Department of Hematology",
+        "service_description": "Hematology is the branch of medicine that focuses on the study of blood, blood-forming tissues, and disorders related to the blood and circulatory system. It involves the diagnosis and treatment of conditions like anemia, leukemia, and clotting disorders..",
+        "price": 76.44
+    },
+
+    {
+        "id": "4",
+        "image": "https://i.ibb.co/gw6W49y/Emergency-Medicine.jpg",
+        "service_name": "Emergency medicine",
+        "service_description": "Emergency medicine involves rapid diagnosis and treatment of acute illnesses and injuries, often in the ER, ensuring critical care in urgent situations.",
+        "price": 90.70
+    },
+
+    {
+        "id": "5",
+        "image": "https://i.ibb.co/V3C1jZT/Orthopedics.jpg",
+        "service_name": "Department of Orthopaedics",
+        "service_description": "The Department of Orthopaedics specializes in treating musculoskeletal conditions, offering surgical and non-surgical solutions for better bone and joint health.",
+        "price": 74.55
+    },
+    {
+        "id": "6",
+        "image": "https://i.ibb.co/wJ3BZnf/dental.jpg",
+        "service_name": "Dental Care",
+        "service_description": "Dental care is essential for oral health. Regular check-ups, brushing, flossing, and a balanced diet promote healthy teeth and gums.",
+        "price": 80.70
+    }
+]

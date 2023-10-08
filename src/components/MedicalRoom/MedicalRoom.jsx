@@ -6,7 +6,7 @@ import picture5 from '../../assets/card.jpeg'
 
 const MedicalRoom = () => {
     return (
-        <div className='my-12'>
+        <div className='my-12 '>
             <h2 className="text-4xl text-center my-4 font-bold">Medical Care Rooms</h2>
           <div className=' lg:flex md:col-span-2 w-[80%] mx-auto my-8'>
             <div className="">
