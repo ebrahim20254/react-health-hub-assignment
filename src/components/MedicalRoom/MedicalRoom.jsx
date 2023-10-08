@@ -27,7 +27,7 @@ const MedicalRoom = () => {
                         <img className='w-[100px] rounded-xl bg-gray-200' src={picture2} alt="" />
                     </div>
                     <div>
-                        <h2 className=' text-2xl font-bold'>qualified doctor</h2>
+                        <h2 className=' text-2xl font-bold'>Qualified Doctor</h2>
                         <p className=''>A qualified doctor is a healthcare professional with extensive medical training and the expertise to diagnose and treat a wide range of medical conditions, promoting the health and well-being of their patients. Their role is essential in the healthcare system.</p>
                     </div>
                 </div>
@@ -56,8 +56,8 @@ const MedicalRoom = () => {
                 {/* doctor and patient image  */}
             </div>
             <div>
-                 <img src={picture5} alt="" />
-                </div>
+                 <img className=' rounded-xl h-[100%]' src={picture5} alt="" />
+              </div>
         </div>
       </div> 
     );
