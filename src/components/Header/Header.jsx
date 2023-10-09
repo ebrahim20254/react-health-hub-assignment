@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <div className=" mt-4 mb-6">
-       <div className="navbar bg-gray-200 py-4 px-4 w-[90%] text-center mx-auto ">
+       <div className="navbar rounded-xl bg-gray-300 py-2 px-4 w-[90%] text-center mx-auto ">
   <div className="navbar-canter mx-auto">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -39,6 +39,8 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
+    <img className=" rounded-full mr-4" src={user?.photoURL} alt="" />
+  <p className="mr-4">{user?.email}</p>
     {
       user ?
       <button onClick={handleSignOut} className="btn">Log Out</button>

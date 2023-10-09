@@ -1,6 +1,9 @@
+/* eslint-disable no-constant-condition */
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Register = () => {
@@ -22,6 +25,12 @@ const Register = () => {
           setRegisterError('Password should be at least 6 characters or long ');
           return;
         }
+        else if(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/.test(password)) {
+          setRegisterError(" password doesn't match")
+        }
+        else{
+          toast("Wow so easy success!");
+        }
 
         // reset user 
         setRegisterError('');
@@ -30,7 +39,7 @@ const Register = () => {
         // create user 
         createUser(email, password)
         .then(result =>{
-            console.log(result.user);
+          toast("Wow so easy success!", result);
             setSuccess('user create in success')
         })
         .catch(error =>{
@@ -41,6 +50,7 @@ const Register = () => {
     return (
         <div className="hero-content flex-col lg:flex-row-reverse my-20">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <p>{registerError}</p>
           <form onSubmit={handleRegister} className="card-body ">
             <h2 className=" text-center text-3xl font-semibold">Please Register</h2>
             <div className="form-control">
@@ -80,6 +90,7 @@ const Register = () => {
           {
             success && <p className=" text-green-700">{success}</p>
           }
+          <ToastContainer />
          <p className=" text-center mb-4">Already have an account? <Link className=" text-blue-600 font-bold" to="/login">Login</Link></p>
         </div>
       </div>
