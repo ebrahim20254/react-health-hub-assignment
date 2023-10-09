@@ -43,7 +43,7 @@ const Header = () => {
   <p className="mr-4">{user?.email}</p>
     {
       user ?
-      <button onClick={handleSignOut} className="btn">Log Out</button>
+      <button onClick={handleSignOut} className="btn btn-primary">Log Out</button>
       :
       <Link to="/login">
         <button className="btn">Login</button>

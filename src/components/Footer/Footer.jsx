@@ -2,7 +2,9 @@
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-gray-700 w-[90%] mx-auto mt-12 text-xl text-white rounded-xl">
+        <footer data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" className="footer p-10 bg-gray-700 w-[90%] mx-auto mt-12 text-xl text-white rounded-xl">
         <nav>
           <header className=" text-blue-600 font-bold text-2xl ">Medical Care</header> 
           <a className="text-sm ">About</a> 

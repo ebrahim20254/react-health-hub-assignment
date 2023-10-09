@@ -10,7 +10,7 @@ const OurDoctor = () => {
             <button className=" bg-gray-200  rounded-full  px-6 py-2 text-xl">Doctors</button>
                 <h2 className="text-4xl font-bold">Our Experience Doctors</h2>
             </div>
-           <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-8 gap-8  w-[80%] mx-auto'>
+           <div data-aos="zoom-out-right" className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-8 gap-8  w-[80%] mx-auto'>
              {/* card -1 */}
              <div className="card bg-base-100 shadow-xl">
                <figure><img src={doctor1} alt="Shoes" /></figure>

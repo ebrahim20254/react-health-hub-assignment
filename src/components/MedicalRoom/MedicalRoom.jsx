@@ -9,11 +9,13 @@ const MedicalRoom = () => {
         <div className='my-12 '>
             <h2 className="text-4xl text-center my-4 font-bold">Medical Care Rooms</h2>
           <div className=' lg:flex md:col-span-2 w-[80%] mx-auto my-8'>
-            <div className="">
+            <div  data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+           data-aos-duration="100">
                 {/* care-1  */}
                 <div className=' flex justify-center items-center gap-8 order-1'>
                     <div>
-                        <img className='w-[100px] rounded-xl bg-gray-200' src={picture1} alt="" />
+                        <img  className='w-[100px] rounded-xl bg-gray-200' src={picture1} alt="" />
                     </div>
                     <div>
                         <h2 className=' text-2xl font-bold'>Operation Theatre</h2>
@@ -56,10 +58,11 @@ const MedicalRoom = () => {
                 {/* doctor and patient image  */}
             </div>
             <div>
-                 <img className=' rounded-xl h-[100%]' src={picture5} alt="" />
+                 <img data-aos="fade-right"  className=' rounded-xl h-[100%]' src={picture5} alt="" />
               </div>
         </div>
       </div> 
+      
     );
 };
 
