@@ -64,7 +64,7 @@ C: Hi there, null
 D: ReferenceError
 Answer
 
-The correct answer is B: "Hi there, undefined."
+The correct answer:    B: "Hi there, undefined."
 
 Explanation:
 In the provided code, the sayHi function expects a parameter name, which is used to construct the string that is returned. However, when you call sayHi() without providing any argument, the name parameter inside the function is undefined. Therefore, 
@@ -85,7 +85,7 @@ C: 3
 D: 4
 Answer
 
-The correct answer is B: 2.
+The correct answer:   B: 2.
 
 Explanation:
 In this code, the forEach method is used to iterate over the nums array. Inside the callback function, there's a conditional check if (num), which evaluates to true for all elements in the array except the first one (0 is a falsy value in JavaScript). Therefore, the count variable is incremented for each element except the first one. Since there are three non-zero elements in the array (1, 2, and 3), the count variable is incremented three times, resulting in a final value of 2. Hence, when you log the count variable, it will output 2..

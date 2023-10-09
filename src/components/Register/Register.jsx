@@ -40,7 +40,7 @@ const Register = () => {
         createUser(email, password)
         .then(result =>{
           toast("Wow so easy success!", result);
-            setSuccess('user create in success')
+            setSuccess('user  created successfully')
         })
         .catch(error =>{
             console.error(error)
