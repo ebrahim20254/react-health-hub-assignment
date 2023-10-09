@@ -41,7 +41,7 @@ const Header = () => {
   <div className="navbar-end">
     {
       user ?
-      <button onClick={handleSignOut} className="btn">Sign Out</button>
+      <button onClick={handleSignOut} className="btn">Log Out</button>
       :
       <Link to="/login">
         <button className="btn">Login</button>
